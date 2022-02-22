@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="js/jQuery.js"></script>
+</head>
+<body>
+    <nav>
+        <button  id="menu_btn"><i class="fas fa-long-arrow-alt-up"></i></button>
+        <div id="nav_body" class="container">
+            <div id="nav_left">
+                <ul>
+                    <li><a href="#">Market</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="nav_right">
+                <span></span>
+                <ul>
+                    <li><input type="text" placeholder="Search for a product" id="search"></li>
+                    <li><button type="button" id="s_btn">Search</button></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    
+    <table class="table table-striped">
+        <thead>
+            <td><i onclick="sort_T_num(this,'asc')" class="fas fa-long-arrow-alt-up"></i> id <i onclick="sort_T_num(this,'desc')" class="fas fa-long-arrow-alt-down"></i></td>
+            <td><i onclick="sort_T(this,'asc')" class="fas fa-long-arrow-alt-up"></i> label <i onclick="sort_T(this,'desc')" class="fas fa-long-arrow-alt-down"></i></td>
+            <td><i onclick="sort_T_num(this,'asc')" class="fas fa-long-arrow-alt-up"></i> price <i onclick="sort_T_num(this,'desc')" class="fas fa-long-arrow-alt-down"></i></td>
+            <td><i onclick="sort_T(this,'asc')" class="fas fa-long-arrow-alt-up"></i> category <i onclick="sort_T(this,'desc')" class="fas fa-long-arrow-alt-down"></i></td>
+            <td>availablity</td>
+            <td>provider</td>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <div id="pag"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
